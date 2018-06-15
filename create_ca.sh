@@ -1,4 +1,5 @@
 #!/bin/bash
+#Script to create CA certificates
 
 [[ "TRACE" ]] && set -x
 

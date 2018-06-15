@@ -1,7 +1,7 @@
 #!/bin/bash
 [[ "TRACE" ]] && set -x
 
-: ${INSTALL_PATH:=$MOUNT_PATH/docker-openssl}
+: ${INSTALL_PATH:=$MOUNT_PATH/openssl}
 
 source $INSTALL_PATH/config
 

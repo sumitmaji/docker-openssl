@@ -1,5 +1,6 @@
 #!/bin/bash
- 
+#Create .jsk certificates
+
 [[ "TRACE" ]] && set -x
 
 : ${COUNTRY:=IN}
@@ -26,7 +27,7 @@ keytool -genkey -validity 730 -noprompt \
  -storepass $password \
  -keypass $password
 
-#Create a certificate request for the appropriate key (referenced by its alias) 
+#Create a certificate request for the appropriate key (referenced by its alias)
 keytool -keystore $domain.jks -alias $domain -certreq -file $domain-cert-req.csr \
  -storepass $password \
  -keypass $password
